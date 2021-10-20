@@ -1,10 +1,10 @@
 # <img src="https://img2.freepng.es/20190209/hai/kisspng-computer-icons-classdojo-image-portable-network-gr-go-to-image-page-5c5f58a7a50304.0204778315497524876759.jpg" alt="Dojo Pro App" width="auto" height="60"> DOJO PRO APP 
 
-App pensada para dispositivos móviles para controlar las asistencias de los alumnos de un Dojo, donde el Sensei / Instructor podrá certificar de una forma sencilla si el alumno ha asistido en el día y hora a la clase en que está inscrito.
+App para controlar las asistencias de los alumnos de un Dojo, donde el Sensei / Instructor podrá certificar de una forma sencilla si el alumno ha asistido en el día y hora a la clase en que está inscrito. 
 
 También podrá llevar un control de todas las asistencias, grado y si ha pagado la licencia federativa anual.
 
-Aplicación hecha con React-Native, base de datos en Mongo DB y testeado con Jest.
+Aplicación pensada para dispositivos móviles, creada con React-Native, base de datos en Mongo DB y testeada con Jest.
 
 <p>
 <img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" alt="html5" width="30" height="30"/>
