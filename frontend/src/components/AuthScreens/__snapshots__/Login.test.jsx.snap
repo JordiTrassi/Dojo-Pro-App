@@ -1,0 +1,240 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Given a Character Component When it is rendered Then screen should match the snapshot 1`] = `
+<RCTSafeAreaView
+  emulateUnlessSupported={true}
+  style={
+    Object {
+      "flex": 1,
+    }
+  }
+>
+  <View
+    style={
+      Object {
+        "height": 761,
+        "marginLeft": -201,
+        "marginTop": -125,
+        "width": 953,
+      }
+    }
+  >
+    <View
+      accessibilityIgnoresInvertColors={true}
+      style={
+        Object {
+          "height": 819,
+          "left": 0,
+          "position": "absolute",
+          "top": 25,
+          "width": 933,
+        }
+      }
+    >
+      <Image
+        resizeMode="contain"
+        source={
+          Object {
+            "uri": "https://www.robinju.com/wp-content/uploads/2012/10/Fushimi-Inari-011.jpg",
+          }
+        }
+        style={
+          Array [
+            Object {
+              "bottom": 0,
+              "left": 0,
+              "position": "absolute",
+              "right": 0,
+              "top": 0,
+            },
+            Object {
+              "height": 819,
+              "width": 933,
+            },
+            Object {
+              "opacity": 0.55,
+            },
+          ]
+        }
+      />
+      <View
+        accessible={true}
+        collapsable={false}
+        focusable={true}
+        nativeID="animatedComponent"
+        onClick={[Function]}
+        onResponderGrant={[Function]}
+        onResponderMove={[Function]}
+        onResponderRelease={[Function]}
+        onResponderTerminate={[Function]}
+        onResponderTerminationRequest={[Function]}
+        onStartShouldSetResponder={[Function]}
+        style={
+          Object {
+            "opacity": 1,
+          }
+        }
+        testID="mainScreenButton"
+      >
+        <Image
+          source={
+            Object {
+              "uri": "https://fontmeme.com/permalink/210902/8337e2e2aeed704e1256a194f328c52c.png",
+            }
+          }
+          style={
+            Object {
+              "height": 50,
+              "left": 225,
+              "top": 200,
+              "width": 350,
+            }
+          }
+        />
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#121212",
+            "fontFamily": "arial",
+            "fontSize": 26,
+            "left": 257,
+            "position": "absolute",
+            "top": 301,
+          }
+        }
+      >
+        E-mail
+      </Text>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#E6E6E6",
+            "borderColor": "#000000",
+            "borderRadius": 7,
+            "borderWidth": 2,
+            "height": 45,
+            "left": 242,
+            "position": "absolute",
+            "top": 337,
+            "width": 300,
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="none"
+          onChangeText={[Function]}
+          placeholder="user@email.com"
+          style={
+            Object {
+              "color": "#121212",
+              "fontFamily": "arial",
+              "fontSize": 25,
+              "marginLeft": 18,
+              "marginTop": 6,
+            }
+          }
+          testID="userInputEmail"
+          value=""
+        />
+      </View>
+      <Text
+        style={
+          Object {
+            "color": "#121212",
+            "fontFamily": "arial",
+            "fontSize": 26,
+            "left": 257,
+            "position": "absolute",
+            "top": 421,
+          }
+        }
+      >
+        Password
+      </Text>
+      <View
+        style={
+          Object {
+            "backgroundColor": "#E6E6E6",
+            "borderColor": "#000000",
+            "borderRadius": 7,
+            "borderWidth": 2,
+            "height": 45,
+            "marginLeft": 239,
+            "marginTop": 414,
+            "width": 300,
+          }
+        }
+      >
+        <TextInput
+          autoCapitalize="none"
+          onChangeText={[Function]}
+          placeholder="*******************"
+          secureTextEntry={true}
+          style={
+            Object {
+              "color": "#121212",
+              "fontFamily": "arial",
+              "fontSize": 25,
+              "marginLeft": 18,
+              "marginTop": 7,
+            }
+          }
+          testID="userInputPassword"
+          value=""
+        />
+      </View>
+    </View>
+    <View
+      accessible={true}
+      collapsable={false}
+      focusable={true}
+      nativeID="animatedComponent"
+      onClick={[Function]}
+      onResponderGrant={[Function]}
+      onResponderMove={[Function]}
+      onResponderRelease={[Function]}
+      onResponderTerminate={[Function]}
+      onResponderTerminationRequest={[Function]}
+      onStartShouldSetResponder={[Function]}
+      style={
+        Object {
+          "backgroundColor": "#E6E6E6",
+          "borderColor": "#000000",
+          "borderRadius": 20,
+          "borderWidth": 3,
+          "elevation": 5,
+          "height": 65,
+          "left": 323,
+          "opacity": 1,
+          "position": "absolute",
+          "shadowColor": "rgba(0,0,0,1)",
+          "shadowOffset": Object {
+            "height": 3,
+            "width": 3,
+          },
+          "shadowOpacity": 0.35,
+          "shadowRadius": 0,
+          "top": 780,
+          "width": 135,
+        }
+      }
+      testID="loginBtn"
+    >
+      <Text
+        style={
+          Object {
+            "color": "#121212",
+            "fontFamily": "arial",
+            "fontSize": 28,
+            "marginTop": 13,
+            "textAlign": "center",
+          }
+        }
+      >
+        Log In
+      </Text>
+    </View>
+  </View>
+</RCTSafeAreaView>
+`;
