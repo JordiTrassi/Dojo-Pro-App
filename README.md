@@ -2,7 +2,7 @@
 
 App para controlar las asistencias de los alumnos de un Dojo, donde el Sensei / Instructor podrá certificar de una forma sencilla si el alumno ha asistido en el día y hora a la clase en que está inscrito. 
 
-También podrá llevar un control de todas las asistencias, grado y si ha pagado la licencia federativa anual.
+También podrá llevar un control de las asistencias, grados y pagos de cuotas mensuales como de  licencias federativas anuales.
 
 Aplicación pensada para dispositivos móviles, creada con React-Native, base de datos en Mongo DB y testeada con Jest.
 
