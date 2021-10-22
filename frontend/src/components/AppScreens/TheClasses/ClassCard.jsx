@@ -14,7 +14,7 @@ import { deleteOneClass } from '../../../redux/actions/actionClasses';
 import styles from './ClassCard_Styles';
 
 const deleteIcon = {
-  uri: 'https://www.searchpng.com/wp-content/uploads/2019/12/Delete-Minus-Remove-Subtract-Icon-715x715.jpg',
+  uri: 'https://cdn-icons-png.flaticon.com/512/1828/1828843.png',
 };
 
 export default function ClassCard() {
