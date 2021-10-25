@@ -1,7 +1,7 @@
 /* eslint-disable no-undef */
 import axios from 'axios';
 import actionTypes from './actionTypes';
-import logIn from './actionCreators';
+import logIn from './actionLogIn';
 
 jest.mock('axios');
 

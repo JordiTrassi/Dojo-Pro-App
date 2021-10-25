@@ -11,7 +11,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { useDispatch } from 'react-redux';
-import logIn from '../../redux/actions/actionCreators';
+import logIn from '../../redux/actions/actionLogIn';
 import validateEmail from '../../utils/validateEmail';
 import styles from './Login_Styles';
 
@@ -29,9 +29,9 @@ export default function Login({ navigation }) {
   const [password, setPassword] = useState('');
   const dispatch = useDispatch();
 
-  async function handleLogIn() {
+  function handleLogIn() {
     if (validateEmail(email)) {
-      await dispatch(logIn(email, password));
+      dispatch(logIn(email, password));
     }
   }
 

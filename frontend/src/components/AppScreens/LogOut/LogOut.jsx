@@ -10,7 +10,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
-import logOutCurrentUser from '../../../redux/actions/actionCreators';
+import logOutCurrentUser from '../../../redux/actions/actionLogOut';
 import styles from './LogOut_styles';
 
 const image = {

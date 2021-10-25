@@ -44,6 +44,7 @@ const AppScreens = () => (
 
 export default function Route() {
   const { isAuthenticated } = useSelector((store) => store.login);
+
   return (
     <NavigationContainer>
       {isAuthenticated ? (
