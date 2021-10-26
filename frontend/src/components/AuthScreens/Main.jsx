@@ -5,7 +5,6 @@ import {
   ImageBackground,
   Image,
 } from 'react-native';
-import PropTypes from 'prop-types';
 import styles from './Main_Styles';
 import LoginBtn from './LoginButton';
 import RegisterBtn from './RegisterButton';
