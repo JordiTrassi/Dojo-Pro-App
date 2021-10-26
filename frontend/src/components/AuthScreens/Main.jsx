@@ -9,6 +9,7 @@ import {
 } from 'react-native';
 import PropTypes from 'prop-types';
 import styles from './Main_Styles';
+import LoginBtn from './LoginButton';
 
 const image = {
   uri: 'https://www.robinju.com/wp-content/uploads/2012/10/Fushimi-Inari-011.jpg',
@@ -18,7 +19,6 @@ const titleimage = {
 };
 
 export default function Main({ navigation }) {
-  const onPressLogin = () => { navigation.navigate('LoginScreen'); };
   const onPressRegister = () => { navigation.navigate('RegisterScreen'); };
   return (
     <SafeAreaView style={styles.container}>
@@ -30,13 +30,7 @@ export default function Main({ navigation }) {
         >
           <Image source={titleimage} style={styles.titleimage} />
         </ImageBackground>
-        <TouchableOpacity
-          testID="loginBtn"
-          style={styles.button2}
-          onPress={onPressLogin}
-        >
-          <Text style={styles.logIn}>Log In</Text>
-        </TouchableOpacity>
+        <LoginBtn />
         <TouchableOpacity
           testID="registerBtn"
           style={styles.button}
