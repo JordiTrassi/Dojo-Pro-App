@@ -8,7 +8,7 @@ export default StyleSheet.create({
     width: '100%',
     zIndex: 1,
     position: 'relative',
-    backgroundColor: 'rgba(4,183,40,0.4)',
+    backgroundColor: 'rgba(214,214,214,0.3)',
     flexDirection: 'row',
     justifyContent: 'space-between',
     alignContent: 'center',

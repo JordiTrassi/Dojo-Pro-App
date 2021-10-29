@@ -18,7 +18,6 @@ import { getCurrentUser } from '../../../redux/actions/actionUser';
 const imageBambo = {
   uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
 };
-
 const studentsIcon = {
   uri: 'https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/people-512.png',
 };
@@ -140,7 +139,6 @@ export default function Profile({ navigation }) {
             {currentUser.surname}
             {'\n'}
             {'\n'}
-
             {currentUser?.disciplines?.map((dis) => (
               <Text style={styles.user_info_disciplines}>
                 {dis.discipline}
