@@ -77,10 +77,10 @@ export default function Login({ navigation }) {
         </ImageBackground>
         <TouchableOpacity
           testID="loginBtn"
-          style={styles.button_login}
+          style={styles.button_signin}
           onPress={() => handleLogIn()}
         >
-          <Text style={styles.btn_login_text}>Log In</Text>
+          <Text style={styles.btn_login_text}>Sign In</Text>
         </TouchableOpacity>
       </View>
     </SafeAreaView>
