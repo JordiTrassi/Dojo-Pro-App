@@ -11,18 +11,14 @@ import {
 } from 'react-native';
 import Svg, { Ellipse } from 'react-native-svg';
 import PropTypes from 'prop-types';
+import Header from '../Header/Header';
 import styles from './Profile_Styles';
 import { getCurrentUser } from '../../../redux/actions/actionUser';
 
 const imageBambo = {
   uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
 };
-const toriIcon = {
-  uri: 'https://cdn1.iconfinder.com/data/icons/japan-line-2/48/Japan_Japanese-59-1024.png',
-};
-const logOutIcon = {
-  uri: 'https://www.seekpng.com/png/full/351-3512254_png-file-transparent-background-logout-icon.png',
-};
+
 const studentsIcon = {
   uri: 'https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/people-512.png',
 };
@@ -37,8 +33,6 @@ const checkIcon = {
 };
 
 export default function Profile({ navigation }) {
-  const onPressLogOut = () => { navigation.navigate('LogOutScreen'); };
-  const onPressProfile = () => { navigation.navigate('ProfileScreen'); };
   const onPressEditUser = () => { navigation.navigate('EditProfileScreen'); };
   const onPressStudents = () => { navigation.navigate('StudentsHeaderScreen'); };
   const onPressClassesList = () => { navigation.navigate('ClassesListScreen'); };
@@ -60,6 +54,7 @@ export default function Profile({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Header />
       <View style={styles.background_img_dashboartStack}>
         <ImageBackground
           source={imageBambo}
@@ -138,26 +133,6 @@ export default function Profile({ navigation }) {
                 style={styles.icon_checkBox}
               />
             </View>
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={onPressLogOut}
-            style={styles.btn_logout}
-          >
-            <Image
-              source={logOutIcon}
-              name="logout"
-              style={styles.incon_logout}
-            />
-          </TouchableOpacity>
-          <TouchableOpacity
-            onPress={onPressProfile}
-            style={styles.btn_profile}
-          >
-            <Image
-              source={toriIcon}
-              resizeMode="contain"
-              style={styles.tori_icon}
-            />
           </TouchableOpacity>
           <Text style={styles.user_info}>
             {currentUser.name}

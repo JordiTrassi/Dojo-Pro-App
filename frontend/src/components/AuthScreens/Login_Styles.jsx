@@ -40,7 +40,7 @@ export default StyleSheet.create({
     marginTop: 7,
     marginLeft: 18,
   },
-  button_login: {
+  button_signin: {
     top: 780,
     left: 323,
     width: 135,

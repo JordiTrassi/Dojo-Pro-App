@@ -211,30 +211,11 @@ export default StyleSheet.create({
     height: 37,
     width: 32,
   },
-  tori_icon: {
-    width: 39,
-    height: 61,
 
+  btn_home_editprofilepage: {
+    left: 248,
   },
-  btn_profile: {
-    top: 573,
-    left: 629,
-    width: 59,
-    height: 44,
-    position: 'absolute',
-    backgroundColor: '#E6E6E6',
-    shadowColor: 'rgba(0,0,0,1)',
-    shadowOffset: {
-      width: 3,
-      height: 3,
-    },
-    elevation: 5,
-    shadowOpacity: 0.4,
-    shadowRadius: 0,
-    borderRadius: 15,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
+
   background_img_dashboartStack: {
     width: 1028,
     height: 1864,

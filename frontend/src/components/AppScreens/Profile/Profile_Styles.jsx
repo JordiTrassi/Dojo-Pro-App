@@ -177,30 +177,6 @@ export default StyleSheet.create({
     height: 32,
   },
 
-  btn_profile: {
-    top: 573,
-    left: 381,
-    width: 59,
-    height: 44,
-    position: 'absolute',
-    backgroundColor: '#E6E6E6',
-    shadowColor: 'rgba(0,0,0,1)',
-    shadowOffset: {
-      width: 3,
-      height: 3,
-    },
-    elevation: 5,
-    shadowOpacity: 0.4,
-    shadowRadius: 0,
-    borderRadius: 15,
-    alignItems: 'center',
-    justifyContent: 'center',
-  },
-  tori_icon: {
-    width: 39,
-    height: 61,
-  },
-
   user_info: {
     top: 661,
     left: 410,

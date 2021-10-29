@@ -12,15 +12,13 @@ import {
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import Svg, { Ellipse } from 'react-native-svg';
+import HomeButton from '../Buttons/HomeButton';
 import { upNewInfo, getCurrentUser } from '../../../redux/actions/actionUser';
 import styles from './EditProfile_Styles';
 import PhotoPopup from './PhotoPopup';
 
 const imageBambo = {
   uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
-};
-const toriIcon = {
-  uri: 'https://cdn1.iconfinder.com/data/icons/japan-line-2/48/Japan_Japanese-59-1024.png',
 };
 const logOutIcon = {
   uri: 'https://www.seekpng.com/png/full/351-3512254_png-file-transparent-background-logout-icon.png',
@@ -30,7 +28,6 @@ const cameraIcon = {
 };
 
 export default function EditProfile({ navigation }) {
-  const onPressProfile = () => { navigation.navigate('ProfileScreen'); };
   const onPressLogOut = () => { navigation.navigate('LogOutScreen'); };
 
   const [name, setName] = useState('');
@@ -93,16 +90,9 @@ export default function EditProfile({ navigation }) {
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         />
-        <TouchableOpacity
-          onPress={onPressProfile}
-          style={styles.btn_profile}
-        >
-          <Image
-            source={toriIcon}
-            resizeMode="contain"
-            style={styles.tori_icon}
-          />
-        </TouchableOpacity>
+        <View style={styles.btn_home_editprofilepage}>
+          <HomeButton />
+        </View>
         <TouchableOpacity
           onPress={onPressLogOut}
           style={styles.btn_logout}
