@@ -3,7 +3,6 @@ import React, { useState } from 'react';
 import {
   SafeAreaView,
   View,
-  Image,
   ImageBackground,
   TouchableOpacity,
   Text,
@@ -12,6 +11,7 @@ import { useDispatch, useSelector } from 'react-redux';
 import PropTypes from 'prop-types';
 import Toast from 'react-native-simple-toast';
 import RNPickerSelect from 'react-native-picker-select';
+import Header from '../Header/Header';
 import styles from './ClassNewOne_Styles';
 import { createNewClass } from '../../../redux/actions/actionClasses';
 import { getCurrentUser } from '../../../redux/actions/actionUser';
@@ -19,17 +19,8 @@ import { getCurrentUser } from '../../../redux/actions/actionUser';
 const imageBambo = {
   uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
 };
-const toriIcon = {
-  uri: 'https://cdn1.iconfinder.com/data/icons/japan-line-2/48/Japan_Japanese-59-1024.png',
-};
-const logOutIcon = {
-  uri: 'https://www.seekpng.com/png/full/351-3512254_png-file-transparent-background-logout-icon.png',
-};
 
 export default function ClassNewOne({ navigation }) {
-  const onPressLogOut = () => { navigation.navigate('LogOutScreen'); };
-  const onPressProfile = () => { navigation.navigate('ProfileScreen'); };
-
   const userId = useSelector((store) => store.user._id);
   const dispatch = useDispatch();
   const [day, setDay] = useState('');
@@ -88,6 +79,7 @@ export default function ClassNewOne({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Header />
       <View style={styles.background_img_dashboartStack}>
         <ImageBackground
           source={imageBambo}
@@ -95,26 +87,6 @@ export default function ClassNewOne({ navigation }) {
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         />
-        <TouchableOpacity
-          onPress={onPressLogOut}
-          style={styles.btn_logout}
-        >
-          <Image
-            source={logOutIcon}
-            resizeMode="contain"
-            style={styles.incon_logout}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={onPressProfile}
-          style={styles.btn_profile}
-        >
-          <Image
-            source={toriIcon}
-            resizeMode="contain"
-            style={styles.tori_icon}
-          />
-        </TouchableOpacity>
         <View style={styles.title_rectangle}>
           <Text style={styles.title_create_new_class}>CREATE NEW CLASS</Text>
         </View>
