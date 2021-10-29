@@ -10,11 +10,8 @@ import styles from './Header_Styles';
 export default function Header() {
   return (
     <View style={styles.header}>
-
       <HomeButton />
-
       <LogOutButton />
-
     </View>
 
   );

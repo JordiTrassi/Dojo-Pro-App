@@ -3,16 +3,12 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
 
   container: {
-    flex: 1,
+    flexDirection: 'column',
+    alignContent: 'center',
   },
   background_img_dashboart: {
     width: 1028,
     height: 1864,
-    position: 'absolute',
-    borderRadius: 15,
-    top: 0,
-    left: 0,
-    overflow: 'hidden',
   },
   background_img_dashboart_imageStyle: {
     opacity: 0.5,
@@ -31,6 +27,7 @@ export default StyleSheet.create({
     top: 5,
     left: 5.5,
   },
+
   btn_students: {
     top: 852,
     left: 404,
@@ -44,7 +41,6 @@ export default StyleSheet.create({
       width: 3,
       height: 3,
     },
-    elevation: 5,
     shadowOpacity: 0.4,
     shadowRadius: 0,
     alignItems: 'center',
@@ -76,7 +72,6 @@ export default StyleSheet.create({
       width: 3,
       height: 3,
     },
-    elevation: 5,
     shadowOpacity: 0.4,
     shadowRadius: 0,
     alignItems: 'center',
@@ -126,7 +121,6 @@ export default StyleSheet.create({
       width: 3,
       height: 3,
     },
-    elevation: 5,
     shadowOpacity: 0.4,
     shadowRadius: 0,
     alignItems: 'center',
@@ -152,31 +146,6 @@ export default StyleSheet.create({
     marginTop: 7,
   },
 
-  btn_logout: {
-    top: 573,
-    left: 649,
-    width: 59,
-    height: 44,
-    position: 'absolute',
-    backgroundColor: '#E6E6E6',
-    shadowColor: 'rgba(0,0,0,1)',
-    shadowOffset: {
-      width: 3,
-      height: 3,
-    },
-    elevation: 5,
-    shadowOpacity: 0.4,
-    shadowRadius: 0,
-    borderRadius: 15,
-    justifyContent: 'center',
-    alignItems: 'center',
-
-  },
-  incon_logout: {
-    width: 28,
-    height: 32,
-  },
-
   user_info: {
     top: 661,
     left: 410,
@@ -197,9 +166,7 @@ export default StyleSheet.create({
     fontSize: 18,
   },
   background_img_dashboartStack: {
-    width: 1028,
-    height: 1864,
-    marginTop: -556,
+    marginTop: -636,
     marginLeft: -354,
   },
 });

@@ -10,6 +10,7 @@ import {
 } from 'react-native';
 
 import PropTypes from 'prop-types';
+import Header from '../Header/Header';
 import Classcards from './ClassCard';
 
 import styles from './ClassesList_Styles';
@@ -17,23 +18,16 @@ import styles from './ClassesList_Styles';
 const imageBambo = {
   uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
 };
-const toriIcon = {
-  uri: 'https://cdn1.iconfinder.com/data/icons/japan-line-2/48/Japan_Japanese-59-1024.png',
-};
-const logOutIcon = {
-  uri: 'https://www.seekpng.com/png/full/351-3512254_png-file-transparent-background-logout-icon.png',
-};
 const plusIcon = {
   uri: 'https://icon-library.com/images/icon-plus/icon-plus-28.jpg',
 };
 
 export default function ClassesList({ navigation }) {
-  const onPressLogOut = () => { navigation.navigate('LogOutScreen'); };
-  const onPressProfile = () => { navigation.navigate('ProfileScreen'); };
   const onPressNewClass = () => { navigation.navigate('ClassNewOneScreen'); };
 
   return (
     <SafeAreaView style={styles.container}>
+      <Header />
       <View style={styles.background_img_dashboartStack}>
         <ImageBackground
           source={imageBambo}
@@ -41,27 +35,6 @@ export default function ClassesList({ navigation }) {
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         />
-        <TouchableOpacity
-          onPress={onPressLogOut}
-          style={styles.btn_logout}
-        >
-          <Image
-            source={logOutIcon}
-            resizeMode="contain"
-            style={styles.incon_logout}
-          />
-        </TouchableOpacity>
-        <TouchableOpacity
-          onPress={onPressProfile}
-          style={styles.btn_profile}
-        >
-          <Image
-            source={toriIcon}
-            resizeMode="contain"
-            style={styles.tori_icon}
-          />
-        </TouchableOpacity>
-
         <View style={styles.title_rectangle}>
           <Text style={styles.title_classes}>CLASSES</Text>
           <TouchableOpacity
