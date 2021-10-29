@@ -12,7 +12,7 @@ import {
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import Svg, { Ellipse } from 'react-native-svg';
-import HomeButton from '../Buttons/HomeButton';
+import Header from '../Header/Header';
 import { upNewInfo, getCurrentUser } from '../../../redux/actions/actionUser';
 import styles from './EditProfile_Styles';
 import PhotoPopup from './PhotoPopup';
@@ -20,16 +20,11 @@ import PhotoPopup from './PhotoPopup';
 const imageBambo = {
   uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
 };
-const logOutIcon = {
-  uri: 'https://www.seekpng.com/png/full/351-3512254_png-file-transparent-background-logout-icon.png',
-};
 const cameraIcon = {
   uri: 'https://icons-for-free.com/iconfiles/png/512/camera-131965017355314519.png',
 };
 
 export default function EditProfile({ navigation }) {
-  const onPressLogOut = () => { navigation.navigate('LogOutScreen'); };
-
   const [name, setName] = useState('');
   const [surname, setSurname] = useState('');
   const [discipline, setDiscipline] = useState('');
@@ -83,6 +78,7 @@ export default function EditProfile({ navigation }) {
 
   return (
     <SafeAreaView style={styles.container}>
+      <Header />
       <View style={styles.background_img_dashboartStack}>
         <ImageBackground
           source={imageBambo}
@@ -90,19 +86,6 @@ export default function EditProfile({ navigation }) {
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         />
-        <View style={styles.btn_home_editprofilepage}>
-          <HomeButton />
-        </View>
-        <TouchableOpacity
-          onPress={onPressLogOut}
-          style={styles.btn_logout}
-        >
-          <Image
-            source={logOutIcon}
-            name="logout"
-            style={styles.incon_logout}
-          />
-        </TouchableOpacity>
         <Svg viewBox="0 0 131.88 134.69" style={styles.avatar_circle}>
           <Ellipse
             stroke="rgba(230, 230, 230,1)"
