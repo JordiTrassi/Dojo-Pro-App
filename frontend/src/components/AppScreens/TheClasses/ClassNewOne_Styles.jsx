@@ -3,6 +3,8 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
 
   container: {
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 
   background_img_dashboart: {
@@ -17,10 +19,8 @@ export default StyleSheet.create({
 
   title_rectangle: {
     top: 655,
-    left: 135,
     width: 350,
     height: 62,
-    position: 'absolute',
     backgroundColor: 'rgba(230,230, 230,0)',
     borderWidth: 3,
     borderColor: '#000000',
@@ -36,29 +36,34 @@ export default StyleSheet.create({
   },
 
   form_new_class: {
-    top: 730,
-    left: 140,
-    flex: 1,
-    maxHeight: 450,
+    // flex: 2,
     width: 340,
-    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
+    top: 680,
+    // left: 50,
+    // paddingLeft: 20,
+    // flex: 1,
+    // maxHeight: 450,
   },
 
-  day_title: {
-    top: 40,
-    left: 30,
-    position: 'absolute',
+  form_title_camp: {
+    paddingTop: 20,
+    paddingBottom: 20,
+    // top: 40,
+    // left: 30,
+    // position: 'absolute',
     fontFamily: 'arial',
     fontWeight: 'bold',
     color: '#121212',
     fontSize: 25,
   },
   rect_day: {
-    top: 80,
-    left: 25,
+    // top: 80,
+    // left: 25,
     width: 300,
     height: 45,
-    position: 'absolute',
+    // position: 'absolute',
     backgroundColor: '#E6E6E6',
     borderWidth: 2,
     borderColor: '#000000',
@@ -72,21 +77,21 @@ export default StyleSheet.create({
     marginLeft: 19,
   },
 
-  hour_title: {
-    top: 60,
-    left: 5,
-    position: 'absolute',
-    fontFamily: 'arial',
-    fontWeight: 'bold',
-    color: '#121212',
-    fontSize: 25,
-  },
+  // hour_title: {
+  //   top: 60,
+  //   left: 5,
+  //   position: 'absolute',
+  //   fontFamily: 'arial',
+  //   fontWeight: 'bold',
+  //   color: '#121212',
+  //   fontSize: 25,
+  // },
   rect_hour: {
-    top: 100,
-    left: 50,
+    // top: 100,
+    // left: 50,
     width: 200,
     height: 45,
-    position: 'absolute',
+    // position: 'absolute',
     backgroundColor: '#E6E6E6',
     borderWidth: 2,
     borderColor: '#000000',
@@ -155,7 +160,11 @@ export default StyleSheet.create({
   },
 
   background_img_dashboartStack: {
+    flex: 7,
+    flexDirection: 'column',
+    alignItems: 'center',
     marginTop: -636,
-    marginLeft: -115,
+    // marginLeft: -115,
   },
+
 });

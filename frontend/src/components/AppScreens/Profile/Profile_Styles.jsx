@@ -166,6 +166,7 @@ export default StyleSheet.create({
     fontSize: 18,
   },
   background_img_dashboartStack: {
+    flex: 7,
     marginTop: -636,
     marginLeft: -354,
   },
