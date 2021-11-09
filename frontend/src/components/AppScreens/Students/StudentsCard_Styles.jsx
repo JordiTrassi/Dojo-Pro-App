@@ -4,7 +4,7 @@ export default StyleSheet.create({
 
   flatlist_students: {
     width: 340,
-    height: 480,
+    height: 570,
     top: 740,
     left: 155,
   },
