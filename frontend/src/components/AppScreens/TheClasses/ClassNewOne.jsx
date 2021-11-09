@@ -33,7 +33,6 @@ export default function ClassNewOne({ navigation }) {
       Toast.show('Complet all form fields');
       isValid = false;
     }
-
     return isValid;
   };
 
@@ -57,7 +56,7 @@ export default function ClassNewOne({ navigation }) {
       <View style={styles.background_img_dashboartStack}>
         <ImageBackground
           source={imageBambo}
-          resizeMode="contain"
+          // resizeMode="contain"
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         />
@@ -83,6 +82,7 @@ export default function ClassNewOne({ navigation }) {
           <Text style={styles.form_title_camp}>Hour:</Text>
           <Picker
             placeholder={{ label: 'Select hour', value: null }}
+            selectedValue={hour}
             onValueChange={(newHour) => setHour(newHour)}
             style={styles.picker_rectangle}
             itemStyle={{ height: 60 }}
