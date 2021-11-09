@@ -3,6 +3,8 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
 
   container: {
+    flexDirection: 'column',
+    alignItems: 'center',
   },
 
   background_img_dashboart: {
@@ -17,10 +19,8 @@ export default StyleSheet.create({
 
   title_rectangle: {
     top: 655,
-    left: 135,
     width: 350,
     height: 62,
-    position: 'absolute',
     backgroundColor: 'rgba(230,230, 230,0)',
     borderWidth: 3,
     borderColor: '#000000',
@@ -36,104 +36,29 @@ export default StyleSheet.create({
   },
 
   form_new_class: {
-    top: 730,
-    left: 140,
-    flex: 1,
-    maxHeight: 450,
     width: 340,
-    justifyContent: 'center',
+    flexDirection: 'column',
+    alignItems: 'center',
+    top: 680,
   },
 
-  day_title: {
-    top: 40,
-    left: 30,
-    position: 'absolute',
+  form_title_camp: {
+    paddingTop: 20,
+    paddingBottom: 20,
     fontFamily: 'arial',
     fontWeight: 'bold',
     color: '#121212',
-    fontSize: 25,
+    fontSize: 27,
   },
-  rect_day: {
-    top: 80,
-    left: 25,
-    width: 300,
-    height: 45,
-    position: 'absolute',
-    backgroundColor: '#E6E6E6',
-    borderWidth: 2,
-    borderColor: '#000000',
-    borderRadius: 7,
-  },
-  input_day: {
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 25,
-    marginTop: 7,
-    marginLeft: 19,
-  },
-
-  hour_title: {
-    top: 60,
-    left: 5,
-    position: 'absolute',
-    fontFamily: 'arial',
-    fontWeight: 'bold',
-    color: '#121212',
-    fontSize: 25,
-  },
-  rect_hour: {
-    top: 100,
-    left: 50,
+  picker_rectangle: {
     width: 200,
-    height: 45,
-    position: 'absolute',
-    backgroundColor: '#E6E6E6',
-    borderWidth: 2,
-    borderColor: '#000000',
-    borderRadius: 7,
-  },
-  input_hour: {
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 25,
-    marginTop: 7,
-    marginLeft: 19,
-  },
-
-  discipline_title: {
-    top: 245,
-    left: 30,
-    position: 'absolute',
-    fontFamily: 'arial',
-    fontWeight: 'bold',
-    color: '#121212',
-    fontSize: 25,
-  },
-  rect_discipline: {
-    top: 285,
-    left: 25,
-    width: 300,
-    height: 45,
-    position: 'absolute',
-    backgroundColor: '#E6E6E6',
-    borderWidth: 2,
-    borderColor: '#000000',
-    borderRadius: 7,
-  },
-  input_discipline: {
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 25,
-    marginTop: 7,
-    marginLeft: 19,
+    height: 50,
   },
 
   button_confirm: {
-    top: 460,
-    left: 45,
+    top: 90,
     width: 260,
     height: 65,
-    position: 'absolute',
     backgroundColor: '#E6E6E6',
     borderRadius: 20,
     borderWidth: 3,
@@ -155,7 +80,10 @@ export default StyleSheet.create({
   },
 
   background_img_dashboartStack: {
+    flex: 7,
+    flexDirection: 'column',
+    alignItems: 'center',
     marginTop: -636,
-    marginLeft: -115,
   },
+
 });
