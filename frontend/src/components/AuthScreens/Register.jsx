@@ -16,13 +16,7 @@ import { size } from 'lodash';
 import validateEmail from '../../utils/validateEmail';
 import confirm from '../../redux/actions/actionRegister';
 import styles from './Register_Style';
-
-const image = {
-  uri: 'https://www.robinju.com/wp-content/uploads/2012/10/Fushimi-Inari-011.jpg',
-};
-const titleimage = {
-  uri: 'https://fontmeme.com/permalink/210902/8337e2e2aeed704e1256a194f328c52c.png',
-};
+import { imageBckGrd, titleImage } from '../../assets/ImagesAndIcons';
 
 export default function Register({ navigation }) {
   const onPressMain = () => { navigation.navigate('MainScreen'); };
@@ -72,7 +66,7 @@ export default function Register({ navigation }) {
     <SafeAreaView style={styles.container}>
       <View style={styles.image_Stack}>
         <ImageBackground
-          source={image}
+          source={imageBckGrd}
           resizeMode="contain"
           style={styles.image1}
           imageStyle={styles.image1_imageStyle}
@@ -81,7 +75,7 @@ export default function Register({ navigation }) {
             testID="mainScreenButton"
             onPress={onPressMain}
           >
-            <Image source={titleimage} style={styles.titleimage} />
+            <Image source={titleImage} style={styles.titleimage} />
           </TouchableOpacity>
           <Text style={styles.user_name_title}>User Name</Text>
           <View style={styles.rect_name}>

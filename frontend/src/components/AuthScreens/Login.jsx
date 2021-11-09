@@ -14,13 +14,7 @@ import { useDispatch } from 'react-redux';
 import logIn from '../../redux/actions/actionLogIn';
 import validateEmail from '../../utils/validateEmail';
 import styles from './Login_Styles';
-
-const image = {
-  uri: 'https://www.robinju.com/wp-content/uploads/2012/10/Fushimi-Inari-011.jpg',
-};
-const titleimage = {
-  uri: 'https://fontmeme.com/permalink/210902/8337e2e2aeed704e1256a194f328c52c.png',
-};
+import { imageBckGrd, titleImage } from '../../assets/ImagesAndIcons';
 
 export default function Login({ navigation }) {
   const onPressMain = () => { navigation.navigate('MainScreen'); };
@@ -39,7 +33,7 @@ export default function Login({ navigation }) {
     <SafeAreaView style={styles.container}>
       <View style={styles.imageStack}>
         <ImageBackground
-          source={image}
+          source={imageBckGrd}
           resizeMode="contain"
           style={styles.image}
           imageStyle={styles.image_imageStyle}
@@ -48,7 +42,7 @@ export default function Login({ navigation }) {
             testID="mainScreenButton"
             onPress={onPressMain}
           >
-            <Image source={titleimage} style={styles.titleimage} />
+            <Image source={titleImage} style={styles.titleimage} />
           </TouchableOpacity>
           <Text style={styles.eMail}>E-mail</Text>
           <View style={styles.rect_email}>

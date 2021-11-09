@@ -10,15 +10,8 @@ import {
 import Header from '../Header/Header';
 import ClassSelector from './AssistanceClassSelector';
 import AssistanceSwiper from './AssitanceSwiperStudents';
-
+import { imageBambo, checkIcon } from '../../../assets/ImagesAndIcons';
 import styles from './AssistanceControl_styles';
-
-const imageBambo = {
-  uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
-};
-const checkIcon = {
-  uri: 'https://cdn0.iconfinder.com/data/icons/pixel-perfect-at-24px-volume-4/24/5091-512.png',
-};
 
 export default function Assistance() {
   return (
@@ -27,7 +20,7 @@ export default function Assistance() {
       <View style={styles.background_img_dashboartStack}>
         <ImageBackground
           source={imageBambo}
-          resizeMode="contain"
+          // resizeMode="contain"
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         />

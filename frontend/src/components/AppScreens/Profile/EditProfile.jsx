@@ -12,17 +12,11 @@ import {
 import PropTypes from 'prop-types';
 import { useSelector, useDispatch } from 'react-redux';
 import Svg, { Ellipse } from 'react-native-svg';
+import { imageBambo, cameraIcon } from '../../../assets/ImagesAndIcons';
 import Header from '../Header/Header';
 import { upNewInfo, getCurrentUser } from '../../../redux/actions/actionUser';
 import styles from './EditProfile_Styles';
 import PhotoPopup from './PhotoPopup';
-
-const imageBambo = {
-  uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
-};
-const cameraIcon = {
-  uri: 'https://icons-for-free.com/iconfiles/png/512/camera-131965017355314519.png',
-};
 
 export default function EditProfile({ navigation }) {
   const [name, setName] = useState('');

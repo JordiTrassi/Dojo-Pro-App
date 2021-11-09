@@ -13,23 +13,10 @@ import Svg, { Ellipse } from 'react-native-svg';
 import PropTypes from 'prop-types';
 import Header from '../Header/Header';
 import styles from './Profile_Styles';
+import {
+  imageBambo, studentsIcon, calendarIcon, pencilIcon, checkIcon,
+} from '../../../assets/ImagesAndIcons';
 import { getCurrentUser } from '../../../redux/actions/actionUser';
-
-const imageBambo = {
-  uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
-};
-const studentsIcon = {
-  uri: 'https://cdn1.iconfinder.com/data/icons/ios-11-glyphs/30/people-512.png',
-};
-const calendarIcon = {
-  uri: 'https://cdn.icon-icons.com/icons2/620/PNG/512/calendar-with-a-clock-time-tools_icon-icons.com_56831.png',
-};
-const pencilIcon = {
-  uri: 'https://cdn.icon-icons.com/icons2/620/PNG/512/pencil-striped-symbol-for-interface-edit-buttons_icon-icons.com_56782.png',
-};
-const checkIcon = {
-  uri: 'https://cdn0.iconfinder.com/data/icons/pixel-perfect-at-24px-volume-4/24/5091-512.png',
-};
 
 export default function Profile({ navigation }) {
   const onPressEditUser = () => { navigation.navigate('EditProfileScreen'); };
@@ -57,7 +44,7 @@ export default function Profile({ navigation }) {
       <View style={styles.background_img_dashboartStack}>
         <ImageBackground
           source={imageBambo}
-          resizeMode="contain"
+          // resizeMode="contain"
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         >
