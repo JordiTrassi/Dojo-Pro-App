@@ -13,12 +13,9 @@ import Toast from 'react-native-simple-toast';
 import { Picker } from '@react-native-picker/picker';
 import Header from '../Header/Header';
 import styles from './ClassNewOne_Styles';
+import { imageBambo } from '../../../assets/ImagesAndIcons';
 import { createNewClass } from '../../../redux/actions/actionClasses';
 import { getCurrentUser } from '../../../redux/actions/actionUser';
-
-const imageBambo = {
-  uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
-};
 
 export default function ClassNewOne({ navigation }) {
   const userId = useSelector((store) => store.user._id);

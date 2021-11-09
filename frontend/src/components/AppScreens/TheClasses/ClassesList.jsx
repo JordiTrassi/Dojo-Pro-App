@@ -12,15 +12,8 @@ import {
 import PropTypes from 'prop-types';
 import Header from '../Header/Header';
 import Classcards from './ClassCard';
-
+import { imageBambo, plusIcon } from '../../../assets/ImagesAndIcons';
 import styles from './ClassesList_Styles';
-
-const imageBambo = {
-  uri: 'https://theshowroommag.com/wp-content/uploads/2020/01/1239x697.jpg',
-};
-const plusIcon = {
-  uri: 'https://icon-library.com/images/icon-plus/icon-plus-28.jpg',
-};
 
 export default function ClassesList({ navigation }) {
   const onPressNewClass = () => { navigation.navigate('ClassNewOneScreen'); };
@@ -31,7 +24,7 @@ export default function ClassesList({ navigation }) {
       <View style={styles.background_img_dashboartStack}>
         <ImageBackground
           source={imageBambo}
-          resizeMode="contain"
+          // resizeMode="contain"
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         />

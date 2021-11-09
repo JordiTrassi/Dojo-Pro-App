@@ -10,12 +10,8 @@ import {
 } from 'react-native';
 import Svg, { Ellipse } from 'react-native-svg';
 import { getCurrentUser } from '../../../redux/actions/actionUser';
-
+import { pencilIcon } from '../../../assets/ImagesAndIcons';
 import styles from './StudentsCard_Styles';
-
-const pencilIcon = {
-  uri: 'https://cdn.icon-icons.com/icons2/620/PNG/512/pencil-striped-symbol-for-interface-edit-buttons_icon-icons.com_56782.png',
-};
 
 export default function StudentCard() {
   const currentStudents = useSelector((store) => store.user.students);

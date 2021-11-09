@@ -74,6 +74,7 @@ export default StyleSheet.create({
   },
 
   background_img_dashboartStack: {
+    flex: 8,
     marginTop: -636,
     marginLeft: -115,
   },

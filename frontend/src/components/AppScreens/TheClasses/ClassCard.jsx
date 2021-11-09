@@ -12,10 +12,7 @@ import { getCurrentUser } from '../../../redux/actions/actionUser';
 import { deleteOneClass } from '../../../redux/actions/actionClasses';
 
 import styles from './ClassCard_Styles';
-
-const deleteIcon = {
-  uri: 'https://cdn-icons-png.flaticon.com/512/1828/1828843.png',
-};
+import { deleteIcon } from '../../../assets/ImagesAndIcons';
 
 export default function ClassCard() {
   const currentClasses = useSelector((store) => store.user.classes);
