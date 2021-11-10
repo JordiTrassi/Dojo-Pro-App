@@ -1,0 +1,173 @@
+import { StyleSheet } from 'react-native';
+
+export default StyleSheet.create({
+
+  container: {
+    flexDirection: 'column',
+    alignContent: 'center',
+  },
+  background_img_dashboart: {
+    width: 1028,
+    height: 1864,
+  },
+  background_img_dashboart_imageStyle: {
+    opacity: 0.5,
+  },
+  avatar_circle: {
+    top: 661,
+    left: 562,
+    width: 135,
+    height: 135,
+    position: 'absolute',
+  },
+  icon_avatar: {
+    width: 125,
+    height: 125,
+    borderRadius: 50,
+    top: 5,
+    left: 5.5,
+  },
+
+  btn_students: {
+    top: 852,
+    left: 404,
+    width: 138,
+    height: 152,
+    position: 'absolute',
+    backgroundColor: '#E6E6E6',
+    borderRadius: 20,
+    shadowColor: 'rgba(0,0,0,1)',
+    shadowOffset: {
+      width: 3,
+      height: 3,
+    },
+    shadowOpacity: 0.4,
+    shadowRadius: 0,
+    alignItems: 'center',
+  },
+  icon_students: {
+    width: 74,
+    height: 74,
+    marginTop: 23,
+  },
+  textStudents: {
+    fontFamily: 'arial',
+    color: '#121212',
+    width: 90,
+    height: 34,
+    fontSize: 22,
+    marginTop: 2,
+  },
+
+  btn_classes: {
+    top: 852,
+    left: 562,
+    width: 138,
+    height: 152,
+    position: 'absolute',
+    backgroundColor: '#E6E6E6',
+    borderRadius: 20,
+    shadowColor: 'rgba(0,0,0,1)',
+    shadowOffset: {
+      width: 3,
+      height: 3,
+    },
+    shadowOpacity: 0.4,
+    shadowRadius: 0,
+    alignItems: 'center',
+  },
+  icon_calendar: {
+    width: 72,
+    height: 72,
+    marginTop: 25,
+  },
+  text_classes: {
+    fontFamily: 'arial',
+    color: '#121212',
+    width: 80,
+    height: 34,
+    fontSize: 22,
+    marginTop: 2,
+  },
+
+  btn_editUser: {
+    top: 661,
+    left: 663,
+    width: 36,
+    height: 39,
+    position: 'absolute',
+    backgroundColor: 'rgba(230,230, 230,0.39)',
+    borderWidth: 1,
+    borderColor: '#000000',
+    borderRadius: 100,
+    alignItems: 'center',
+  },
+  icon_pencil: {
+    width: 26,
+    height: 26,
+    marginTop: 5,
+  },
+
+  btn_assistanceControl: {
+    top: 1061,
+    left: 411,
+    width: 289,
+    height: 124,
+    position: 'absolute',
+    backgroundColor: '#E6E6E6',
+    borderRadius: 20,
+    shadowColor: 'rgba(0,0,0,1)',
+    shadowOffset: {
+      width: 3,
+      height: 3,
+    },
+    shadowOpacity: 0.4,
+    shadowRadius: 0,
+    alignItems: 'center',
+  },
+  text_assistanceControl: {
+    top: 83,
+    position: 'absolute',
+    fontFamily: 'arial',
+    color: '#121212',
+    fontSize: 22,
+    width: 190,
+  },
+  icon_checkBox: {
+    top: 0,
+    left: 46,
+    position: 'absolute',
+    width: 84,
+    height: 84,
+  },
+  assistanceControlStack: {
+    width: 169,
+    height: 107,
+    marginTop: 7,
+  },
+
+  user_info: {
+    top: 661,
+    left: 410,
+    position: 'absolute',
+    fontFamily: 'arial',
+    color: '#121212',
+    fontSize: 28,
+    fontWeight: 'bold',
+    textTransform: 'capitalize',
+  },
+  user_info_disciplines: {
+    top: 661,
+    left: 410,
+    position: 'absolute',
+    fontFamily: 'arial',
+    color: '#121212',
+    textTransform: 'capitalize',
+    fontSize: 18,
+  },
+  background_img_dashboartStack: {
+    flex: 7,
+    marginTop: -636,
+    marginLeft: -354,
+  },
+});
