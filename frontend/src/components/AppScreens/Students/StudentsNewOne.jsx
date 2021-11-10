@@ -16,7 +16,7 @@ import { imageBambo, cameraIcon } from '../../../assets/ImagesAndIcons';
 import Header from '../Header/Header';
 import { upNewInfo, getCurrentUser } from '../../../redux/actions/actionUser';
 import styles from './StudentsNewOne_Styles';
-import PhotoPopup from '../Profile/PhotoPopup';
+import PhotoPopupStudents from './PhotoPopupStudents';
 
 export default function StudentsNewOne({ navigation }) {
   const [name, setName] = useState('');
@@ -80,6 +80,7 @@ export default function StudentsNewOne({ navigation }) {
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         />
+        <Text style={styles.newStudentInfo}>Enter New Student Info:</Text>
         <Svg viewBox="0 0 131.88 134.69" style={styles.avatar_circle}>
           <Ellipse
             stroke="rgba(230, 230, 230,1)"
@@ -98,41 +99,29 @@ export default function StudentsNewOne({ navigation }) {
         </Svg>
         <View style={styles.rect_name}>
           <TextInput
-            style={styles.name2}
+            style={styles.inputInfo}
             onChangeText={(userName) => setName(userName)}
             value={name}
-            placeholder={currentUser.name}
+            placeholder="Student Name"
             autoCapitalize="none"
           />
         </View>
-        <Text style={styles.yourName}>Your Name:</Text>
-        <Text style={styles.yourSurname}>Your Surname:</Text>
+
         <View style={styles.rect_surname}>
           <TextInput
-            style={styles.surname}
+            style={styles.inputInfo}
             onChangeText={(userSurname) => setSurname(userSurname)}
             value={surname}
-            placeholder={currentUser.surname}
+            placeholder="Student Surname"
             autoCapitalize="none"
           />
         </View>
-        <Text style={styles.discipline}>Discipline:</Text>
         <View style={styles.rect_discipline}>
           <TextInput
-            style={styles.discipline2}
+            style={styles.inputInfo}
             onChangeText={(userDiscipline) => setDiscipline(userDiscipline)}
             value={discipline}
-            placeholder="Discipline"
-            autoCapitalize="none"
-          />
-        </View>
-        <Text style={styles.degree}>Degree:</Text>
-        <View style={styles.rect_degree}>
-          <TextInput
-            style={styles.degree2}
-            onChangeText={(userDegree) => setDegree(userDegree)}
-            value={degree}
-            placeholder="Degree"
+            placeholder="Discipline And Degree"
             autoCapitalize="none"
           />
         </View>
@@ -140,7 +129,7 @@ export default function StudentsNewOne({ navigation }) {
           onPress={() => handleUpdate()}
           style={styles.btn_upgrade}
         >
-          <Text style={styles.upgrade}>Upgrade</Text>
+          <Text style={styles.upgrade}>Upgrade new Student</Text>
         </TouchableOpacity>
         <TouchableOpacity
           onPress={() => openPhotoPopup()}
@@ -153,7 +142,7 @@ export default function StudentsNewOne({ navigation }) {
             style={styles.icon_camera}
           />
         </TouchableOpacity>
-        <PhotoPopup isVisible={showPhotoPopup} setVisible={setShowPhotoPopup} />
+        <PhotoPopupStudents isVisible={showPhotoPopup} setVisible={setShowPhotoPopup} />
       </View>
     </SafeAreaView>
   );

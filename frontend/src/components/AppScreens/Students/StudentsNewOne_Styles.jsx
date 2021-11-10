@@ -3,22 +3,29 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
 
   container: {
-
+    flexDirection: 'column',
+    alignItems: 'center',
   },
   background_img_dashboart: {
     width: 1028,
     height: 1864,
+    position: 'absolute',
   },
   background_img_dashboart_imageStyle: {
     opacity: 0.5,
   },
 
+  newStudentInfo: {
+    top: 640,
+    fontFamily: 'arial',
+    color: '#121212',
+    fontSize: 22,
+  },
+
   avatar_circle: {
-    top: 690,
-    left: 734,
+    top: 670,
     width: 135,
     height: 135,
-    position: 'absolute',
   },
   icon_avatar: {
     top: 5,
@@ -27,116 +34,49 @@ export default StyleSheet.create({
     height: 125,
     borderRadius: 50,
   },
+
   rect_name: {
-    top: 915,
-    left: 680,
+    top: 700,
     width: 250,
     height: 35,
-    position: 'absolute',
     backgroundColor: '#E6E6E6',
     borderWidth: 1,
     borderColor: '#000000',
     borderRadius: 15,
   },
-  name2: {
+
+  inputInfo: {
     fontFamily: 'arial',
     color: '#121212',
     fontSize: 20,
     marginTop: 5,
     marginLeft: 20,
   },
-  yourName: {
-    top: 891,
-    left: 680,
-    position: 'absolute',
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 20,
-  },
-  yourSurname: {
-    top: 961,
-    left: 680,
-    position: 'absolute',
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 20,
-  },
+
   rect_surname: {
-    top: 987,
-    left: 682,
+    top: 720,
     width: 250,
     height: 35,
-    position: 'absolute',
     backgroundColor: '#E6E6E6',
     borderWidth: 1,
     borderColor: '#000000',
     borderRadius: 15,
   },
-  surname: {
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 20,
-    marginTop: 5,
-    marginLeft: 20,
-  },
-  discipline: {
-    top: 1040,
-    left: 682,
-    position: 'absolute',
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 20,
-  },
+
   rect_discipline: {
-    top: 1064,
-    left: 682,
+    top: 740,
     width: 250,
     height: 35,
-    position: 'absolute',
     backgroundColor: '#E6E6E6',
     borderWidth: 1,
     borderColor: '#000000',
     borderRadius: 15,
   },
-  discipline2: {
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 20,
-    marginTop: 5,
-    marginLeft: 20,
-  },
-  degree: {
-    top: 1116,
-    left: 682,
-    position: 'absolute',
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 20,
-  },
-  rect_degree: {
-    top: 1140,
-    left: 682,
-    width: 250,
-    height: 35,
-    position: 'absolute',
-    backgroundColor: '#E6E6E6',
-    borderWidth: 1,
-    borderColor: '#000000',
-    borderRadius: 15,
-  },
-  degree2: {
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 20,
-    marginTop: 5,
-    marginLeft: 20,
-  },
+
   btn_upgrade: {
-    top: 1200,
-    left: 727,
-    width: 168,
+    top: 940,
+    width: 298,
     height: 65,
-    position: 'absolute',
     backgroundColor: '#E6E6E6',
     borderRadius: 20,
     borderWidth: 3,
@@ -156,12 +96,12 @@ export default StyleSheet.create({
     color: '#121212',
     fontSize: 28,
   },
+
   btn_camera: {
-    top: 800,
-    left: 875,
+    top: 350,
+    left: 110,
     width: 71,
     height: 47,
-    position: 'absolute',
     backgroundColor: 'rgba(230,230, 230,0.84)',
     borderWidth: 1,
     borderColor: '#000000',
@@ -183,7 +123,8 @@ export default StyleSheet.create({
 
   background_img_dashboartStack: {
     flex: 7,
+    flexDirection: 'column',
+    alignItems: 'center',
     marginTop: -636,
-    marginLeft: -606,
   },
 });
