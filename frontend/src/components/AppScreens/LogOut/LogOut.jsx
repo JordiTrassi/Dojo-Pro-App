@@ -12,14 +12,7 @@ import PropTypes from 'prop-types';
 import { useSelector } from 'react-redux';
 import logOutCurrentUser from '../../../redux/actions/actionLogOut';
 import styles from './LogOut_styles';
-
-const image = {
-  uri: 'https://www.iflr.com/Media/images/iflr/1-abstract/acorn/Japan%20Housing.jpg',
-};
-const imageLogoutTitle = {
-  uri: 'https://fontmeme.com/permalink/210912/c182b99fe5e59a806e95234b48fad12f.png',
-
-};
+import { imageBckGrdLogOut, imageLogoutTitle } from '../../../assets/ImagesAndIcons';
 
 export default function Logout({ navigation }) {
   const onPressLogIn = () => { navigation.navigate('LoginScreen'); };
@@ -35,7 +28,7 @@ export default function Logout({ navigation }) {
     <SafeAreaView style={styles.container}>
       <View style={styles.imageStack}>
         <ImageBackground
-          source={image}
+          source={imageBckGrdLogOut}
           resizeMode="contain"
           style={styles.image}
           imageStyle={styles.image_imageStyle}

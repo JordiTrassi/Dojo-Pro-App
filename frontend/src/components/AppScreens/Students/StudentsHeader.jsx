@@ -4,14 +4,18 @@ import {
   View,
   ImageBackground,
   Text,
+  Image,
+  TouchableOpacity,
 } from 'react-native';
-
+import PropTypes from 'prop-types';
 import styles from './StudentsHeader_Styles';
-import { imageBambo } from '../../../assets/ImagesAndIcons';
+import { imageBambo, plusIcon } from '../../../assets/ImagesAndIcons';
 import Header from '../Header/Header';
 import Studentscard from './StudentsCard';
 
-export default function StudentsHeader() {
+export default function StudentsHeader({ navigation }) {
+  const onPressNewStudent = () => { navigation.navigate('StudentsNewOneScreen'); };
+
   return (
     <SafeAreaView style={styles.container}>
       <Header />
@@ -24,6 +28,16 @@ export default function StudentsHeader() {
         />
         <View style={styles.title_rectangle}>
           <Text style={styles.title_students}>STUDENTS</Text>
+          <TouchableOpacity
+            onPress={onPressNewStudent}
+            style={styles.btn_new_student}
+          >
+            <Image
+              source={plusIcon}
+              name="newStudent"
+              style={styles.icon_plus}
+            />
+          </TouchableOpacity>
         </View>
         <View>
           <Studentscard />
@@ -32,3 +46,9 @@ export default function StudentsHeader() {
     </SafeAreaView>
   );
 }
+
+StudentsHeader.propTypes = {
+  navigation: PropTypes.shape({
+    navigate: PropTypes.func.isRequired,
+  }).isRequired,
+};

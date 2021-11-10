@@ -34,6 +34,31 @@ export default StyleSheet.create({
     fontSize: 30,
     fontWeight: 'bold',
   },
+  btn_new_student: {
+    top: 10,
+    left: 205,
+    width: 47,
+    height: 47,
+    position: 'absolute',
+    backgroundColor: 'rgba(230,230, 230,0.84)',
+    borderWidth: 1,
+    borderColor: '#000000',
+    borderRadius: 100,
+    justifyContent: 'center',
+    alignItems: 'center',
+    opacity: 0.7,
+    shadowColor: 'rgba(0,0,0,1)',
+    shadowOffset: {
+      width: 3,
+      height: 3,
+    },
+    shadowOpacity: 0.4,
+    shadowRadius: 0,
+  },
+  icon_plus: {
+    height: 40,
+    width: 40,
+  },
 
   background_img_dashboartStack: {
     flex: 7,

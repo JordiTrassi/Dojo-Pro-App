@@ -24,6 +24,12 @@ export const deleteIcon = {
 export const plusIcon = {
   uri: 'https://icon-library.com/images/icon-plus/icon-plus-28.jpg',
 };
+export const imageBckGrdLogOut = {
+  uri: 'https://www.iflr.com/Media/images/iflr/1-abstract/acorn/Japan%20Housing.jpg',
+};
+export const imageLogoutTitle = {
+  uri: 'https://fontmeme.com/permalink/210912/c182b99fe5e59a806e95234b48fad12f.png',
+};
 
 // ---- AuthScreens Assets: ----
 
