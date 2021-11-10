@@ -76,7 +76,7 @@ export default function StudentsNewOne({ navigation }) {
       <View style={styles.background_img_dashboartStack}>
         <ImageBackground
           source={imageBambo}
-          resizeMode="contain"
+        //   resizeMode="contain"
           style={styles.background_img_dashboart}
           imageStyle={styles.background_img_dashboart_imageStyle}
         />

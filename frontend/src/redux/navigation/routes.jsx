@@ -10,6 +10,7 @@ import EditProfile from '../../components/AppScreens/Profile/EditProfile';
 import ClassesList from '../../components/AppScreens/TheClasses/ClassesList';
 import ClassNewOne from '../../components/AppScreens/TheClasses/ClassNewOne';
 import StudentsHeader from '../../components/AppScreens/Students/StudentsHeader';
+import StudentsNewOne from '../../components/AppScreens/Students/StudentsNewOne';
 import AssistanceControl from '../../components/AppScreens/AssistanceControl/AssistanceControl';
 import Logout from '../../components/AppScreens/LogOut/LogOut';
 
@@ -37,6 +38,7 @@ const AppScreens = () => (
     <Stack.Screen name="ClassesListScreen" component={ClassesList} options={{ headerShown: false }} />
     <Stack.Screen name="ClassNewOneScreen" component={ClassNewOne} options={{ headerShown: false }} />
     <Stack.Screen name="StudentsHeaderScreen" component={StudentsHeader} options={{ headerShown: false }} />
+    <Stack.Screen name="StudentsNewOneScreen" component={StudentsNewOne} options={{ headerShown: false }} />
     <Stack.Screen name="AssistanceControlScreen" component={AssistanceControl} options={{ headerShown: false }} />
     <Stack.Screen name="LogOutScreen" component={Logout} options={{ headerShown: false }} />
   </AppStack.Navigator>

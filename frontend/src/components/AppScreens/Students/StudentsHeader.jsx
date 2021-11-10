@@ -14,7 +14,7 @@ import Header from '../Header/Header';
 import Studentscard from './StudentsCard';
 
 export default function StudentsHeader({ navigation }) {
-  const onPressNewStudent = () => { navigation.navigate('ClassNewOneScreen'); };
+  const onPressNewStudent = () => { navigation.navigate('StudentsNewOneScreen'); };
 
   return (
     <SafeAreaView style={styles.container}>
