@@ -121,7 +121,16 @@ export default function StudentsNewOne({ navigation }) {
             style={styles.inputInfo}
             onChangeText={(userDiscipline) => setDiscipline(userDiscipline)}
             value={discipline}
-            placeholder="Discipline And Degree"
+            placeholder="Student Discipline"
+            autoCapitalize="none"
+          />
+        </View>
+        <View style={styles.rect_degree}>
+          <TextInput
+            style={styles.inputInfo}
+            onChangeText={(userDegree) => setDegree(userDegree)}
+            value={degree}
+            placeholder="Student Degree"
             autoCapitalize="none"
           />
         </View>

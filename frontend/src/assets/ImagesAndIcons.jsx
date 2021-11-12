@@ -31,6 +31,16 @@ export const imageLogoutTitle = {
   uri: 'https://fontmeme.com/permalink/210912/c182b99fe5e59a806e95234b48fad12f.png',
 };
 
+// ---- Button Icons: ----
+
+export const toriIcon = {
+  uri: 'https://cdn1.iconfinder.com/data/icons/japan-line-2/48/Japan_Japanese-59-1024.png',
+};
+
+export const logOutIcon = {
+  uri: 'https://www.seekpng.com/png/full/351-3512254_png-file-transparent-background-logout-icon.png',
+};
+
 // ---- AuthScreens Assets: ----
 
 export const imageBckGrd = {
