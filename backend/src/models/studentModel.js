@@ -18,6 +18,6 @@ const studentSchema = Schema({
     { type: Schema.Types.ObjectId, ref: 'Discipline' },
   ],
 
-});
+}, { timestamps: true });
 
 module.exports = model('Student', studentSchema);

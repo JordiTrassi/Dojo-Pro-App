@@ -1,7 +1,7 @@
 const { model, Schema } = require('mongoose');
 const { isValidPassword } = require('./userModel.isValidPassword');
 
-const userSchema = Schema({
+const userSchema = new Schema({
   name: String,
   surname: String,
   email: String,
@@ -18,11 +18,11 @@ const userSchema = Schema({
   classes: [
     { type: Schema.Types.ObjectId, ref: 'Class' },
   ],
+
   students: [
     { type: Schema.Types.ObjectId, ref: 'Student' },
   ],
-
-});
+}, { timestamps: true });
 
 userSchema.methods.isValidPassword = isValidPassword;
 
