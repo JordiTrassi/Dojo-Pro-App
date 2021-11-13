@@ -27,7 +27,7 @@ function login({ user }, res) {
   const token = jwt.sign(
     { user: data },
     process.env.JWT_SECRET,
-    { expiresIn: '3000m' },
+    { expiresIn: process.env.TOKEN_EXPIRES_IN },
   );
   const refreshToken = jwt.sign(
     { user: data },
