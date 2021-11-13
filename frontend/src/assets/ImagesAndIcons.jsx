@@ -36,7 +36,6 @@ export const imageLogoutTitle = {
 export const toriIcon = {
   uri: 'https://cdn1.iconfinder.com/data/icons/japan-line-2/48/Japan_Japanese-59-1024.png',
 };
-
 export const logOutIcon = {
   uri: 'https://www.seekpng.com/png/full/351-3512254_png-file-transparent-background-logout-icon.png',
 };
