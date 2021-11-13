@@ -6,6 +6,7 @@ const _Environments = {
     CLASSES_URL: '',
     DELETE_CLASS_URL: '',
     LOG_OUT_USER_URL: '',
+    CREATE_NEW_STUDENT_URL: '',
 }
 
 function getEnvironment() {

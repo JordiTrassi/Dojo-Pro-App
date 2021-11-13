@@ -8,21 +8,25 @@ import {
   Image,
   TouchableOpacity,
 } from 'react-native';
-import PropTypes from 'prop-types';
-import { useSelector } from 'react-redux';
+import { useNavigation } from '@react-navigation/native';
+import { useSelector, useDispatch, useEffect } from 'react-redux';
 import logOutCurrentUser from '../../../redux/actions/actionLogOut';
 import styles from './LogOut_styles';
 import { imageBckGrdLogOut, imageLogoutTitle } from '../../../assets/ImagesAndIcons';
 
-export default function Logout({ navigation }) {
-  const onPressLogIn = () => { navigation.navigate('LoginScreen'); };
-  // const dispatch = useDispatch();
+export default function Logout() {
+  const onPressLogin = useNavigation();
+  let { isAuthenticated } = useSelector((store) => store.login);
+  const dispatch = useDispatch();
 
-  const userRefershToken = useSelector((store) => store.user.refreshToken);
+  // const userRefershToken = useSelector((store) => store.user.refreshToken);
 
-  // useEffect(() => {
-  //   logOutCurrentUser(userId);
-  // }, []);
+  useEffect(() => {
+    if (isAuthenticated === true) {
+      isAuthenticated = false;
+      dispatch(logOutCurrentUser(isAuthenticated));
+    }
+  }, []);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -37,7 +41,9 @@ export default function Logout({ navigation }) {
         </ImageBackground>
         <TouchableOpacity
           style={styles.button_login}
-          onPress={onPressLogIn}
+          onPress={() => {
+            onPressLogin.navigate('LoginScreen');
+          }}
         >
           <Text style={styles.btn_login_text}>Log In</Text>
         </TouchableOpacity>
@@ -45,9 +51,3 @@ export default function Logout({ navigation }) {
     </SafeAreaView>
   );
 }
-
-Logout.propTypes = {
-  navigation: PropTypes.shape({
-    navigate: PropTypes.func.isRequired,
-  }).isRequired,
-};

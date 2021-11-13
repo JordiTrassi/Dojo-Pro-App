@@ -35,6 +35,14 @@ export default StyleSheet.create({
     borderRadius: 50,
   },
 
+  inputInfo: {
+    fontFamily: 'arial',
+    color: '#121212',
+    fontSize: 20,
+    marginTop: 5,
+    marginLeft: 20,
+  },
+
   rect_name: {
     top: 700,
     width: 250,
@@ -43,14 +51,6 @@ export default StyleSheet.create({
     borderWidth: 1,
     borderColor: '#000000',
     borderRadius: 15,
-  },
-
-  inputInfo: {
-    fontFamily: 'arial',
-    color: '#121212',
-    fontSize: 20,
-    marginTop: 5,
-    marginLeft: 20,
   },
 
   rect_surname: {
@@ -65,6 +65,15 @@ export default StyleSheet.create({
 
   rect_discipline: {
     top: 740,
+    width: 250,
+    height: 35,
+    backgroundColor: '#E6E6E6',
+    borderWidth: 1,
+    borderColor: '#000000',
+    borderRadius: 15,
+  },
+  rect_degree: {
+    top: 760,
     width: 250,
     height: 35,
     backgroundColor: '#E6E6E6',

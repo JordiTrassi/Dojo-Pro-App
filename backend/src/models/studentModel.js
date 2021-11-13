@@ -3,7 +3,10 @@ const { model, Schema } = require('mongoose');
 const studentSchema = Schema({
   name: String,
   surname: String,
-  photo: String,
+  photo: {
+    type: String,
+    default: 'https://cdn2.iconfinder.com/data/icons/ronin-warriors/512/asia-theather-japan-warrior-mask-ronin-512.png',
+  },
 
   classes: [
     { type: Schema.Types.ObjectId, ref: 'Class' },
@@ -15,6 +18,6 @@ const studentSchema = Schema({
     { type: Schema.Types.ObjectId, ref: 'Discipline' },
   ],
 
-});
+}, { timestamps: true });
 
 module.exports = model('Student', studentSchema);

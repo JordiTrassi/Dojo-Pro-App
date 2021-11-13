@@ -5,10 +5,7 @@ import {
 } from 'react-native';
 import { useNavigation } from '@react-navigation/native';
 import styles from './HomeButton_Styles';
-
-const toriIcon = {
-  uri: 'https://cdn1.iconfinder.com/data/icons/japan-line-2/48/Japan_Japanese-59-1024.png',
-};
+import { toriIcon } from '../../../assets/ImagesAndIcons';
 
 export default function HomeButton() {
   const onPressLogin = useNavigation();
