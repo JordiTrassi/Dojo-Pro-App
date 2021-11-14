@@ -1,15 +1,26 @@
 const { model, Schema } = require('mongoose');
+const bcrypt = require('bcryptjs');
 const { isValidPassword } = require('./userModel.isValidPassword');
 
 const userSchema = new Schema({
-  name: String,
+  name: {
+    type: String,
+    rquiered: true,
+  },
   surname: String,
-  email: String,
+  email: {
+    type: String,
+    rquiered: true,
+    unique: true,
+  },
   photo: {
     type: String,
     default: 'https://cdn2.iconfinder.com/data/icons/ronin-warriors/512/asia-theather-japan-warrior-mask-ronin-512.png',
   },
-  password: String,
+  password: {
+    type: String,
+    rquiered: true,
+  },
 
   disciplines: [
     { type: Schema.Types.ObjectId, ref: 'Discipline' },
