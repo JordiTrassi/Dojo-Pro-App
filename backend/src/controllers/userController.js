@@ -1,3 +1,5 @@
+/* eslint-disable no-underscore-dangle */
+const asyncHandler = require('express-async-handler');
 const User = require('../models/userModel');
 
 async function getAllUsers({ query }, res) {
@@ -10,15 +12,36 @@ async function getAllUsers({ query }, res) {
   }
 }
 
-async function createOneUser({ body }, res) {
-  try {
-    const createdUser = await User.create(body);
-    res.json(createdUser);
-  } catch (error) {
-    res.send(error);
-    res.status(500);
+const createOneUser = asyncHandler(async (req, res) => {
+  const {
+    name, email, password, photo,
+  } = req.body;
+
+  const userExists = await User.findOne({ email });
+
+  if (userExists) {
+    res.status(400);
+    throw new Error('User Alredy Exists');
   }
-}
+  const createdUser = await User.create({
+    name,
+    email,
+    password,
+    photo,
+  });
+  if (createdUser) {
+    res.status(201).json({
+      _id: createdUser._id,
+      isAdmin: createdUser.isAdmin,
+      name: createdUser.name,
+      email: createdUser.email,
+      photo: createdUser.photo,
+    });
+  } else {
+    res.status(400);
+    throw new Error('Error Occured! ');
+  }
+});
 
 async function getOneUserById({ params }, res) {
   const { userId } = params;
